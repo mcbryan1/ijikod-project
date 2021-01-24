@@ -38,7 +38,7 @@ function Navigation() {
             <div className="welcome me-5">
               <p>Welcome Solomon</p>
             </div>
-            <div>
+            <div className="me-5">
               <button className="btn">Sign Out</button>
             </div>
           </div>

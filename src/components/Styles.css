@@ -1,3 +1,4 @@
+/************************ Navigation CSS **************************/
 .logo{
     color: #FF7C7C !important;
     font-weight: 700;
@@ -35,3 +36,26 @@
     color: #fff !important;
     background-color: #d35656;
 }
+
+
+/************************ Landing Page CSS **************************/
+.leftContainer h1{
+    color: #fff;
+   margin-top: 4rem;
+   font-size: 3.5rem;
+   font-weight: bold;
+   margin-bottom: 1rem;
+}
+.leftContainer img{
+    margin-top: 3rem;
+}
+@media only screen and (max-width: 800px) {
+    .leftContainer h1{
+       font-size: 2rem;
+       text-align: center;
+       margin-top: 3rem;
+    }
+    .buttn{
+        text-align: center; 
+    }
+  }
