@@ -1,4 +1,5 @@
 import React from 'react'
+import Contact from '../components/Contact'
 import Features from '../components/Features'
 import LandingPage from '../components/LandingPage'
 import Navigation from '../components/Navigation'
@@ -12,6 +13,7 @@ function Homepage() {
             <Navigation/>
             <LandingPage/>
             <Features/>
+            <Contact/>
         </div>
     )
 }
