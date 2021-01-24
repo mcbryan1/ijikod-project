@@ -1,4 +1,5 @@
 /************************ Navigation CSS **************************/
+
 .logo {
   color: #ff7c7c !important;
   font-weight: 700;
@@ -96,131 +97,128 @@
   background-color: inherit;
 }
 
-.rightDetails{
-    text-align: left !important;
+.rightDetails {
+  text-align: left !important;
 }
-.rightDetails h3{
-    font-weight: 700;
+.rightDetails h3 {
+  font-weight: 700;
 }
-.rightDetails p{
-    font-weight: 700;
-    color: #aaa;
+.rightDetails p {
+  font-weight: 700;
+  color: #aaa;
 }
-.rightContainer{
-    margin-bottom: 2rem;
+.rightContainer {
+  margin-bottom: 2rem;
 }
-.iconContainer{
-    text-align: right;
+.iconContainer {
+  text-align: right;
 }
-.mainIcon{
-    color: #ff7c7c;
-    border: 2px solid #ff7c7c;
-    padding: .5rem;
-    font-size: 2.1rem;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: 20px;
-    box-shadow: 4px 4px 100px 8px rgba(247,153,153,0.75);
--webkit-box-shadow: 4px 4px 100px 8px rgba(247,153,153,0.75);
--moz-box-shadow: 4px 4px 100px 8px rgba(247,153,153,0.75);
+.mainIcon {
+  color: #ff7c7c;
+  border: 2px solid #ff7c7c;
+  padding: 0.5rem;
+  font-size: 2.1rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  box-shadow: 4px 4px 100px 8px rgba(247, 153, 153, 0.75);
+  -webkit-box-shadow: 4px 4px 100px 8px rgba(247, 153, 153, 0.75);
+  -moz-box-shadow: 4px 4px 100px 8px rgba(247, 153, 153, 0.75);
 }
-.mainRight{
+.mainRight {
   margin-top: 2rem;
 }
 
-
-
 /************************ Contact Page CSS **************************/
 
-textarea { 
-  font-size:20px; 
-  width:100%; 
+textarea {
+  font-size: 20px;
+  width: 100%;
   height: 10rem;
   border-radius: 5px;
   padding: 1rem;
   border: none;
-} 
-.input{
+}
+.input {
   background: rgba(196, 196, 196, 0.36) !important;
   border: none;
   font-weight: 700;
   font-size: 1rem;
 }
-.location{
+.location {
   display: inline-block;
 }
-.locaIcon{
+.locaIcon {
   color: #ff7c7c;
   font-size: 25px;
 }
-.locaText p{
+.locaText p {
   color: #fff;
   font-weight: 700;
 }
-.location{
+.location {
   margin: 1.5rem 0;
 }
 
 @media only screen and (max-width: 800px) {
-  .location{
-    border-top: .5px solid rgb(46, 41, 41);
-    border-bottom: .5px solid  rgb(46, 41, 41);
+  .location {
+    border-top: 0.5px solid rgb(46, 41, 41);
+    border-bottom: 0.5px solid rgb(46, 41, 41);
     padding: 2rem;
   }
 }
 
 /************************ Footer Page CSS **************************/
-.footer{
-  background-color: rgba(31, 31, 31, 0.36) ;
-  
+.footer {
+  background-color: rgba(31, 31, 31, 0.36);
 }
-.footText p{
+.footText p {
   color: #fff;
   font-weight: 600;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
-.footText{
+.footText {
   padding-top: 1rem;
 }
-.icons{
+.icons {
   padding-right: 2rem;
 }
-.github{
+.github {
   color: #fff !important;
   background-color: rgb(54, 54, 54) !important;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 20px;
   border-radius: 50%;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-.github:hover{
+.github:hover {
   color: #000 !important;
   background-color: rgb(255, 255, 255) !important;
 }
-.instagram{
+.instagram {
   color: #fff !important;
   background-color: rgb(175, 1, 190) !important;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 20px;
   border-radius: 50%;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-.instagram:hover{
-  color:rgb(175, 1, 190) !important;
+.instagram:hover {
+  color: rgb(175, 1, 190) !important;
   background-color: rgb(255, 255, 255) !important;
 }
-.twitter{
+.twitter {
   color: #fff !important;
   background-color: rgb(14, 1, 190) !important;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 20px;
   border-radius: 50%;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-.twitter:hover{
+.twitter:hover {
   color: rgb(14, 1, 190) !important;
   background-color: rgb(255, 255, 255) !important;
 }
-.social-media{
+.social-media {
   padding-bottom: 1rem;
 }

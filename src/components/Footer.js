@@ -11,7 +11,7 @@ function Footer() {
       </div>
       <div className="row text-center">
         <div className="col-12">
-          <div class="social-media">
+          <div className="social-media">
             <a
               href="https://github.com/mcbryan1"
               className="icons"

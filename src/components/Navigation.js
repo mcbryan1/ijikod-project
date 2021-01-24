@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Styles.css";
 
 function Navigation() {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-inherit">
+      <nav className="navbar  navbar-expand-lg fixed ">
         <div className="container-fluid">
-          <Link className="navbar-brand logo ms-5" href="#">
+          <Link className="navbar-brand logo ms-5" to="/">
             Reemote.io
           </Link>
           <button
@@ -20,18 +30,18 @@ function Navigation() {
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon navIcon">
-            <i class="fas fa-bars navIcon" ></i>
+              <i className="fas fa-bars navIcon"></i>
             </span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav mx-auto">
-              <Link className="nav-link links" aria-current="page" to="#">
+              <Link className="nav-link links" aria-current="page" to="/">
                 Home
               </Link>
-              <Link className="nav-link links" to="#">
+              <Link className="nav-link links" to="/">
                 Features
               </Link>
-              <Link className="nav-link links" to="#">
+              <Link className="nav-link links" to="/">
                 Contact
               </Link>
             </div>
