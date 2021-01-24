@@ -1,21 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Styles.css";
 
 function Navigation() {
-  const [navbar, setNavbar] = useState(false);
-
-  const changeBackground = () => {
-    if (window.scrollY >= 80) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
-  window.addEventListener("scroll", changeBackground);
   return (
     <div>
-      <nav className="navbar  navbar-expand-lg fixed ">
+      <nav className="navbar navbar-expand-lg fixed ">
         <div className="container-fluid">
           <Link className="navbar-brand logo ms-5" to="/">
             Reemote.io
