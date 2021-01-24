@@ -42,7 +42,7 @@ function Contact() {
             </div>
             <div className="mb-3 ">
               <textarea
-                placeholder="Message input"
+                placeholder="Message"
                 className="input"
               ></textarea>
             </div>
