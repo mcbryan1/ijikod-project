@@ -1,0 +1,37 @@
+.logo{
+    color: #FF7C7C !important;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.links{
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: .5s ease-in-out;
+    padding-right: 2rem !important;
+}
+.links:hover{
+    color: #FF7C7C !important;
+}
+.navIcon{
+    color: #FF7C7C !important;
+    font-size:28px;
+}
+.welcome p{
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.btn{
+    background-color: #FF7C7C;
+    color: #fff;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-weight: 700;
+    transition: .5s ease-in-out;
+}
+.btn:hover{
+    color: #fff !important;
+    background-color: #d35656;
+}
