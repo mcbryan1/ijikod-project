@@ -5,7 +5,7 @@ import Slide from "react-reveal/Slide";
 
 function Contact() {
   return (
-    <div className="container pb-5">
+    <div className="container pb-5" id="contact">
       <div className="row">
         <div className="col-md-4"></div>
         <div className="col-md-4">

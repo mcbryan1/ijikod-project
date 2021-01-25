@@ -1,13 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Styles.css";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Navigation() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg fixed ">
         <div className="container-fluid">
-          <Link className="navbar-brand logo ms-5" to="/">
+          <Link
+            className="navbar-brand logo ms-5"
+            onClick={() => scroll.scrollToTop()}
+          >
             Reemote.io
           </Link>
           <button
@@ -25,13 +28,27 @@ function Navigation() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav mx-auto">
-              <Link className="nav-link links" aria-current="page" to="/">
+              <Link
+                className="nav-link links"
+                aria-current="page"
+                onClick={() => scroll.scrollToTop()}
+              >
                 Home
               </Link>
-              <Link className="nav-link links" to="/">
+              <Link
+                className="nav-link links"
+                to="features"
+                smooth={true}
+                duration={1000}
+              >
                 Features
               </Link>
-              <Link className="nav-link links" to="/">
+              <Link
+                className="nav-link links"
+                to="contact"
+                smooth={true}
+                duration={1000}
+              >
                 Contact
               </Link>
             </div>
