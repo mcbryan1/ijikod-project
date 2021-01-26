@@ -31,7 +31,11 @@ function Login() {
   return (
     <div className="container-fluid main reg">
       <div className="row">
-        <div className="col-md-3"></div>
+        <div className="col-md-3">
+          <h2 className="p-2 logo">
+            Reemote.io
+          </h2>
+        </div>
         <div className="col-md-6 mt-5">
           <Card>
             <Card.Body>

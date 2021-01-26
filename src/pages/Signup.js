@@ -16,7 +16,6 @@ function Signup() {
   const [loading, setLoading] = useState(false);
   const history = useHistory();
 
-
   async function handleSubmit(e) {
     e.preventDefault();
     if (passwordRef.current.value !== passwordConfirmRef.current.value) {
@@ -27,7 +26,7 @@ function Signup() {
       setError("");
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
-      history.push("/")
+      history.push("/");
     } catch (error) {
       setError("Failed to create an account");
     }
@@ -37,7 +36,9 @@ function Signup() {
   return (
     <div className="container-fluid main reg">
       <div className="row">
-        <div className="col-md-3"></div>
+        <div className="col-md-3">
+          <h2 className="p-2 logo">Reemote.io</h2>
+        </div>
         <div className="col-md-6 mt-5">
           <Card>
             <Card.Body>
