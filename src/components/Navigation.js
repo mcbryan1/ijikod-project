@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Styles.css";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { useAuth } from "../contexts/AuthContext";
+import { Alert } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 
 function Navigation() {
+  const [error, setError] = useState("");
+  const { logout, currentUser } = useAuth();
+  const history = useHistory();
+
+  async function handleLogout() {
+    setError("");
+
+    try {
+      await logout();
+      history.push("/login");
+    } catch (error) {
+      setError("Failed to logout");
+    }
+  }
   return (
     <div>
       <nav className="navbar navbar-expand-lg fixed ">
@@ -53,10 +70,11 @@ function Navigation() {
               </Link>
             </div>
             <div className="welcome me-5">
-              <p>Welcome Solomon</p>
+              {error && <Alert variant="danger">{error}</Alert>}
+              <p>Welcome {currentUser.email}</p>
             </div>
             <div className="me-5">
-              <button className="btn">Sign Out</button>
+              <button className="btn" onClick={handleLogout}>Sign Out</button>
             </div>
           </div>
         </div>
