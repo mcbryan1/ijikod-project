@@ -19,3 +19,7 @@
   color: #ff7c7c;
 }
 
+.already {
+  color: #aaa !important;
+  font-weight: 600;
+}
