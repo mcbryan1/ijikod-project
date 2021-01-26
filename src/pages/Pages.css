@@ -1,8 +1,40 @@
-.main{
-    /* background-color: #01020B; */
-    width: 100%;
-    background-color: #01020B;
+.main {
+  /* background-color: #01020B; */
+  width: 100%;
+  background-color: #01020b;
 }
-.reg{
-    height: 100vh;
+.reg {
+  height: 100vh;
 }
+
+
+.mainLoad {
+  height: 100vh;
+  background-color: #01020b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading {
+  width: 35px * 4;
+  height: 100px;
+  background: radial-gradient(circle, #6c8075 50%, transparent 50%),
+    radial-gradient(circle, #6c8075 50%, transparent 50%),
+    radial-gradient(circle, #6c8075 50%, transparent 50%),
+    radial-gradient(circle, #6c8075 50%, transparent 50%);
+  background-repeat: no-repeat;
+  background-position: 0 50%, 0 50%, 50% 50%, 100% 50%;
+  background-size: 35px 4px;
+  animation: move 0.5s both infinite cubic-bezier(0, 0.74, 0.65, 0.71);
+}
+@keyframes move {
+  from {
+    background-position: 0 50%, 0 50%, 50% 50%, 100% 50%;
+    background-size: 5px 5px, 35px 35px, 35px 35px, 35px 35px;
+  }
+  to {
+    background-position: 0 50%, 50% 50%, 100% 50%, 100% 50%;
+    background-size: 35px 35px, 35px 35px, 35px 35px, 5px 5px;
+  }
+}
+

@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import { auth } from "../firebase";
+import Loading from "../pages/Loading";
 
 const AuthContext = React.createContext();
 
@@ -9,6 +10,7 @@ export function useAuth() {
 
 export function AuthProvider({ children }) {
   const [currentUser, setcurrentUser] = useState();
+  const [pending, setPending] = useState(true);
   const [loading, setLoading] = useState();
 
   //     Signing Up
@@ -28,11 +30,17 @@ export function AuthProvider({ children }) {
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       setcurrentUser(user);
+      setPending(false);
       setLoading(false);
     });
     return unsubscribe;
   }, []);
 
+  if(pending){
+    return (
+      <Loading/>
+    )
+  }
   const value = {
     currentUser,
     login,
