@@ -23,3 +23,9 @@
   color: #aaa !important;
   font-weight: 600;
 }
+
+@media only screen and (max-width: 800px) {
+  .reg {
+    height: 120vh;
+  }
+}
